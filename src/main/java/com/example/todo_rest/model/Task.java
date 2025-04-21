@@ -21,15 +21,15 @@ import lombok.ToString;
 @Entity
 public class Task {
 
-    @Id @GeneratedValue
+    @Id
+    @GeneratedValue
     private Long id;
 
     @Builder.Default
     private LocalDateTime createdAt = LocalDateTime.now();
     private String title;
-    @Lob 
+    @Lob
     private String description;
-    private boolean completed;
     private LocalDateTime deadline;
-    
+
 }
