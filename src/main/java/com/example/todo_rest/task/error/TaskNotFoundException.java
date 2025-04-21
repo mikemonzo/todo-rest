@@ -1,4 +1,4 @@
-package com.example.todo_rest.error;
+package com.example.todo_rest.task.error;
 
 public class TaskNotFoundException extends RuntimeException {
 
